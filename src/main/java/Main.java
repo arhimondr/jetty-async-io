@@ -271,7 +271,8 @@ public class Main
                 int bufferIndex = currentBuffer.getAndIncrement();
                 if (bufferIndex < buffers.size()) {
                     byte[] buffer = buffers.get(bufferIndex);
-                    out.write(buffer, 0, buffer.length);
+                    byte[] bufferCopy = Arrays.copyOf(buffer, buffer.length);
+                    out.write(bufferCopy, 0, bufferCopy.length);
                 }
                 else {
                     async.complete();
