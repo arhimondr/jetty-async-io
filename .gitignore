@@ -1,0 +1,60 @@
+# Ignore Mac files
+.DS_Store
+
+# Ignore Eclipse files
+.classpath
+.cproject
+.project
+.settings/
+
+# Ignore IntelliJ files
+.idea/*
+out/
+*.iml
+*.eml
+
+# Ignore ninja-ide files
+*.nja
+
+# Ignore vim related files
+.ropeproject/
+*.swp
+
+# Ignore sublime related files
+*.sublime-workspace
+
+# Ignore datanucleus generation logs
+datanucleus.log
+
+# Build files
+.gradle/
+build/
+target/
+
+# Vagrant state files
+.vagrant
+.mapr_vagrant_storage_do_not_delete
+
+# byte-compiled Python modules
+*.pyc
+
+# tmp backup files
+*~
+\#*#
+.#*
+
+# mailmap file
+.mailmap
+
+# cscope and ctags index files
+ctags.out
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
+
+# nosetests and coverage reports
+nosetests.xml
+coverage.xml
+.coverage
+jacoco-server.exec*
